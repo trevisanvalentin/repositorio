@@ -1,0 +1,38 @@
+/* acerca de los productos*/
+.main-content{
+    display: grid;
+    border: 1px black;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 2fr);
+}
+
+.main-content p{
+    @include flex (row, center, center);
+    flex-wrap: wrap;
+}
+
+.back-main-content1, .back-main-h1{
+    background-color: antiquewhite;
+}
+.back-main-content2, .back-main-h2{
+background-color: beige;
+}
+.photo{
+    @include flex (row, center, center);
+    height: 300px;
+}
+
+div h1{
+    text-align: center;
+    background-color: rgb(235, 224, 205);
+    margin: 0px;
+    
+}
+
+div h2{
+    text-align: center;
+    background-color: rgb(235, 224, 205);
+    margin: 0px;
+    padding-bottom: 8px;
+}
+/* /acerca de los productos*/

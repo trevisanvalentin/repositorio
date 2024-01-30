@@ -1,0 +1,47 @@
+/* contactanos */
+.form-container{
+    flex-wrap: wrap;
+    width: 480px;
+    margin: auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    background-color: rgb(208, 208, 185);
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.p-contacto{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 24px;
+}
+
+.button:hover{
+    font-size: 40px;
+
+}
+@media (max-width:480px){
+    .form-container{
+        width: 100%;
+    }
+    
+}
+.back-main{
+    background-color: beige;
+    min-height: 100vh;
+}
+.tittle{
+    background-color: beige;
+}
+/* /contactanos */

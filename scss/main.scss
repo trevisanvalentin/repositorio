@@ -1,0 +1,26 @@
+//BASE
+@import "partials/base/reset";
+@import "partials/base/tipografia";
+
+
+//utilities
+@import "partials/utilities/variables";
+@import "partials/utilities/mixin";
+@import "partials/utilities/maps";
+@import "partials/utilities/extend";
+
+
+//components
+@import "partials/components/index";
+@import "partials/components/aboutsus";
+@import "partials/components/contactanos";
+@import "partials/components/productos";
+@import "partials/components/nuestrosproductos";
+@import "partials/components/cards";
+@import "partials/components/buttons";
+@import "partials/components/navbar";
+@import "partials/components/carousel";
+@import "partials/components/footer";
+
+
+//ACÁ SOLO SE IMPORTA, NO SE ESCRIBE CODIGO

@@ -1,0 +1,27 @@
+/* inicio*/
+.foto-principal{
+    @include flex (row, center, center); 
+    background-color: rgb(235, 224, 205);
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+.foto-secundaria{
+    @include flex (row, center, space-around);
+    flex-wrap: wrap;
+    background-color: rgb(226, 217, 201);
+    height: auto;
+    padding: 25px 0px 5px 0px;
+    gap: 20px;
+    
+}
+
+.foto-ntres{
+    @include flex (row, center, space-around);
+    flex-wrap: wrap;
+    background-color: rgb(235, 224, 205);
+    height: auto;
+    padding: 25px 0px 5px 0px;
+    gap: 20px;  
+}
+/* /inicio*/

@@ -1,0 +1,35 @@
+/* navbar */
+.list-item{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: black  
+    }
+}
+
+.nav-bar-container{
+    text-align: right;
+
+}
+
+.nav-bar-flex{
+    @include flex (row, end, end);
+}
+
+.hover:hover{
+    color: rgb(16, 14, 14);
+    text-decoration: underline;
+}
+li a{
+    @include flex (column, center, center);
+    img{
+        width: 450px;        
+    }
+}
+.navbar-color{
+    background-color: rgb(158, 140, 119);
+    padding-bottom: 0px;
+    padding-top: 0px;
+    
+}
+/* /navbar */
