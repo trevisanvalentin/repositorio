@@ -1,0 +1,9 @@
+.tittle-color1{
+    color: map-get($colores , rojo-footer );
+    margin: 0;
+  }
+  
+  .tittle-color2{
+    color: map-get($colores, h1-titulo );
+    margin: 0;
+  }

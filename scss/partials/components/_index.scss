@@ -1,27 +1,104 @@
 /* inicio*/
+.tittle-background{
+    
+    h1{
+        margin-top: 10px; 
+        margin-bottom: 0px;
+    }
+    h2{
+        margin-bottom: 10px
+
+    }
+}
+
+
 .foto-principal{
     @include flex (row, center, center); 
-    background-color: rgb(235, 224, 205);
-    padding-bottom: 25px;
+   /* background-color: rgb(235, 224, 205);*/
+    padding-bottom: 5px;
     width: 100%;
+    position: relative;
+    height: auto;
+    text-align: center;
+    flex: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .foto-secundaria{
-    @include flex (row, center, space-around);
+    display: flex;
     flex-wrap: wrap;
-    background-color: rgb(226, 217, 201);
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+    padding: 0px;
+    h2{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.list-item{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+}
+
+.foto-secundaria img{
+    height: 300px;
+}
+
+
+@media (max-width:550px){
+    .foto-secundaria img{
+        width: 40vh;
+    }
+}
+@media (max-width:450px){
+    .foto-secundaria img{
+        width: 100%;
+        justify-content: left;
+        align-items: start;
+        
+    }
+}
+
+
+
+.foto-ntres {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
     height: auto;
     padding: 25px 0px 5px 0px;
     gap: 20px;
-    
+    position: relative;
+    text-align: center;
 }
 
-.foto-ntres{
-    @include flex (row, center, space-around);
-    flex-wrap: wrap;
-    background-color: rgb(235, 224, 205);
+
+.foto-ntres img {
+    max-width: 100%; 
     height: auto;
-    padding: 25px 0px 5px 0px;
-    gap: 20px;  
 }
+
+.texto-superpuesto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+
+}
+
+.C-h5{
+    color: black;
+}
+
+.C-P{
+    color: black;
+}
+
+
 /* /inicio*/

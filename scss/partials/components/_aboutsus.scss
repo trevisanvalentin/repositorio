@@ -1,30 +1,48 @@
-/* sobre nosotros*/
-.contenido1{
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
+
+/* Estilos para el contenedor principal */
+.contenido1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 25px;
-}
-
-.foto1{
-    @include flex (row, center, center);
-}
-
-.parrafo1, .parrafo2{
+    flex-wrap: wrap;
+  }
+  
+  /* Estilos para el párrafo */
+  .parrafo1, .parrafo2 {
+    flex: 1;
     font-size: 24px;
     margin: 20px 20px 0px 0px;
     padding-left: 30px;
+  }
+  
+  
+  /* Estilos para la foto */
+  .foto1 {
+    flex: 1;
+    @include flex(row, center, center);
+  }
+  
+  /* Estilos adicionales para mejorar el diseño en dispositivos pequeños */
+  @media (max-width: 768px) {
+    .contenido1 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .parrafo1, .parrafo2, .foto1 {
+      width: 100%;
+      padding-left: 0;
+      margin: 20px 0;
+      text-align: center;
+      font-size: 16px;
+      
+    }
+  }
+
+.foto1 img{
+  width: 100%;
 }
-.parrafo2{
-    font-size: 24px;
-    margin: 20px 20px 0px 0px;
-    padding-right: 30px;
+
+.foto2 img{
+  width: 300px;
 }
-.back-color1{
-    background-color: rgb(239, 239, 220)
-}
-.back-color2{
-    background-color: beige;
-}
-/* /sobre nosotros*/

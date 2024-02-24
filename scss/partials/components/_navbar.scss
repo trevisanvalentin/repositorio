@@ -7,18 +7,14 @@
     }
 }
 
-.nav-bar-container{
-    text-align: right;
-
-}
-
 .nav-bar-flex{
     @include flex (row, end, end);
 }
 
 .hover:hover{
-    color: rgb(16, 14, 14);
+    color: map-get($colores, hover);
     text-decoration: underline;
+    
 }
 li a{
     @include flex (column, center, center);
@@ -27,9 +23,25 @@ li a{
     }
 }
 .navbar-color{
-    background-color: rgb(158, 140, 119);
+    background-color: map-get($colores, rojo-footer);
     padding-bottom: 0px;
     padding-top: 0px;
-    
+    max-width: 1200px;
+    margin: auto;
 }
+
+.logo-navbar{
+    width: 100%;
+}
+
+.logo-navbar{
+    height: 50px;
+    width: 100px;
+    img{
+        height: 50px;
+    width: 100px;
+    }
+}
+
+
 /* /navbar */

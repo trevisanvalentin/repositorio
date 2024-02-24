@@ -1,38 +1,59 @@
 /* acerca de los productos*/
-.main-content{
-    display: grid;
-    border: 1px black;
-    grid-template-columns: repeat(1, 2fr);
-    grid-template-rows: repeat(1, 2fr);
-}
 
-.main-content p{
-    @include flex (row, center, center);
-    flex-wrap: wrap;
-}
 
-.back-main-content1, .back-main-h1{
-    background-color: antiquewhite;
-}
-.back-main-content2, .back-main-h2{
-background-color: beige;
-}
-.photo{
-    @include flex (row, center, center);
-    height: 300px;
-}
-
-div h1{
+.contenido1{
+    display: flex;
+    width: 1200px;
+    margin: auto;
     text-align: center;
-    background-color: rgb(235, 224, 205);
-    margin: 0px;
+}
+.parrafo1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.foto-1 img{
+    height: 400px;
     
 }
 
-div h2{
-    text-align: center;
-    background-color: rgb(235, 224, 205);
-    margin: 0px;
-    padding-bottom: 8px;
+
+h2{text-align: center;}
+
+h1{text-align: center;}
+
+@media(max-width:1200px){
+    .contenido1{
+        width: 100%;
+    }
+    .parrafo1{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* /acerca de los productos*/
