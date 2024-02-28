@@ -8,7 +8,6 @@ footer {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    /*background-color: rgb(158, 140, 119);*/
 }
 
 .footer-container{
@@ -24,33 +23,22 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 40px;
+    .logo img{
+        width: 70px;
+    }
+        .texto-footer{
+            max-width: 350px;
+            margin-top: 20px;
+        }
+            h2{
+                margin-bottom: 30px;
+                color:black;
+            }
+                a{
+                    margin-top: 10px;
+                    text-decoration: none;
+                    color: black
+                }
 }
-
-.box-footer .logo img{
-    width: 70px;
-}
-
-.box-footer .texto-footer{
-    max-width: 350px;
-    margin-top: 20px;
-}
-
-.box-footer h2{
-    margin-bottom: 30px;
-    color:black;
-}
-
-.box-footer a{
-    margin-top: 10px;
-    text-decoration: none;
-    color: black
-}
-
-
-
-
-
-
-
 
 /* /footer */ 

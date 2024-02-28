@@ -36,16 +36,17 @@
         padding-top: 5px;
         padding-bottom: 5px;
     }
+    img{
+        height: 300px;
+    }
+        
 }
+
 
 .list-item{
     display: flex;
     flex-direction: row;
     padding-left: 0px;
-}
-
-.foto-secundaria img{
-    height: 300px;
 }
 
 
@@ -75,12 +76,11 @@
     gap: 20px;
     position: relative;
     text-align: center;
-}
+    img {
+        max-width: 100%; 
+        height: auto;
+    }
 
-
-.foto-ntres img {
-    max-width: 100%; 
-    height: auto;
 }
 
 .texto-superpuesto{
